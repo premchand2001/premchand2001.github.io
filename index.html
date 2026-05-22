@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premchand Kothapalli — Data & AI Engineer</title>
+<title>Premchand Kothapalli — Senior AI & Data Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -114,7 +114,6 @@ nav {
   gap: 4rem;
 }
 
-/* Animated grid background */
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
   background:
@@ -358,6 +357,7 @@ section { padding: 110px 6%; position: relative; }
 .exp-role { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--white); }
 .exp-company { color: var(--cyan); font-size: 0.88rem; margin: 4px 0; font-weight: 500; }
 .exp-project { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--green); margin-bottom: 1rem; letter-spacing: 1px; }
+.exp-project + .exp-project { margin-top: -0.5rem; }
 .exp-date {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
   color: var(--gray); background: var(--bg2);
@@ -377,6 +377,8 @@ section { padding: 110px 6%; position: relative; }
   background: rgba(0,212,255,0.06); border: 1px solid var(--border);
   color: var(--gray2);
 }
+.exp-sub-section { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--border); }
+.exp-sub-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--green); letter-spacing: 1px; margin-bottom: 0.6rem; }
 
 /* ── PROJECTS ── */
 #projects { background: var(--bg); }
@@ -544,29 +546,29 @@ footer span { color: var(--cyan); }
   <div class="hero-left">
     <div class="hero-eyebrow">
       <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">Data Engineer · GenAI Engineer</div>
+      <div class="eyebrow-text">Senior AI Engineer · MLOps · Agentic AI</div>
     </div>
     <h1 class="hero-name">
       Premchand<br>
       <span class="line2">Kothapalli</span>
     </h1>
     <div class="hero-roles">
+      <span class="role-chip">Azure AI Foundry</span>
       <span class="role-chip">AWS Specialist</span>
-      <span class="role-chip">Apache Airflow</span>
       <span class="role-chip green">LangGraph</span>
-      <span class="role-chip green">RAG · MCP</span>
-      <span class="role-chip">Snowflake</span>
+      <span class="role-chip green">Agentic AI · RAG</span>
+      <span class="role-chip">MLflow · MLOps</span>
       <span class="role-chip">Delta Lake</span>
     </div>
-    <p class="hero-desc">5+ years building production-grade data pipelines, cloud-native ETL systems, and multi-agent GenAI applications across healthcare and enterprise environments. Currently engineering AI systems at Volts Consulting.</p>
+    <p class="hero-desc">5+ years building production ML systems, agentic AI pipelines, and MLOps infrastructure in regulated healthcare environments. Currently building multi-agent AI at Capgemini.</p>
     <div class="hero-ctas">
       <a href="#projects" class="btn-primary">View My Work</a>
       <a href="#contact" class="btn-outline">Get In Touch</a>
     </div>
     <div class="hero-stats-row">
       <div class="stat-box"><div class="stat-n">5+</div><div class="stat-l">Yrs Exp</div></div>
-      <div class="stat-box"><div class="stat-n">6</div><div class="stat-l">Projects</div></div>
-      <div class="stat-box"><div class="stat-n">51M+</div><div class="stat-l">Records</div></div>
+      <div class="stat-box"><div class="stat-n">7</div><div class="stat-l">Projects</div></div>
+      <div class="stat-box"><div class="stat-n">100M+</div><div class="stat-l">Records</div></div>
       <div class="stat-box"><div class="stat-n">4</div><div class="stat-l">Certs</div></div>
     </div>
   </div>
@@ -575,28 +577,28 @@ footer span { color: var(--cyan); }
     <div class="terminal">
       <div class="terminal-bar">
         <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
-        <div class="terminal-title">premchand@data-lab ~ zsh</div>
+        <div class="terminal-title">premchand@ai-lab ~ zsh</div>
       </div>
       <div class="terminal-body">
         <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">whoami --verbose</span></div>
         <div class="t-blank"></div>
         <div class="t-out"><span class="t-key">name</span>       : <span class="t-str">"Premchand Kothapalli"</span></div>
-        <div class="t-out"><span class="t-key">role</span>       : <span class="t-str">"Data + GenAI Engineer"</span></div>
+        <div class="t-out"><span class="t-key">role</span>       : <span class="t-str">"Senior AI Engineer"</span></div>
         <div class="t-out"><span class="t-key">location</span>   : <span class="t-str">"Denton, TX"</span></div>
         <div class="t-out"><span class="t-key">experience</span> : <span class="t-num">5</span> <span class="t-str"># years</span></div>
         <div class="t-blank"></div>
         <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat stack.json</span></div>
         <div class="t-blank"></div>
-        <div class="t-out"><span class="t-key">cloud</span>  : <span class="t-str">["AWS Glue","EMR","Redshift"]</span></div>
-        <div class="t-out"><span class="t-key">orch</span>   : <span class="t-str">["Airflow","MWAA","Delta Lake"]</span></div>
-        <div class="t-out"><span class="t-key">genai</span>  : <span class="t-str">["LangGraph","RAG","Weaviate"]</span></div>
-        <div class="t-out"><span class="t-key">lang</span>   : <span class="t-str">["Python","PySpark","SQL"]</span></div>
+        <div class="t-out"><span class="t-key">agentic</span> : <span class="t-str">["LangGraph","RAG","Weaviate"]</span></div>
+        <div class="t-out"><span class="t-key">azure</span>   : <span class="t-str">["AI Foundry","Azure ML","Fabric"]</span></div>
+        <div class="t-out"><span class="t-key">mlops</span>   : <span class="t-str">["MLflow","Drift Monitor","CI/CD"]</span></div>
+        <div class="t-out"><span class="t-key">cloud</span>   : <span class="t-str">["AWS Glue","EMR","Redshift"]</span></div>
         <div class="t-blank"></div>
         <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">git log --oneline -3</span></div>
         <div class="t-blank"></div>
         <div class="t-out"><span class="t-num">a1f2c3d</span> multiagent-chatbot deployed</div>
-        <div class="t-out"><span class="t-num">b4e5f6a</span> medallion pipeline v2</div>
-        <div class="t-out"><span class="t-num">c7d8e9b</span> cdc governance framework</div>
+        <div class="t-out"><span class="t-num">b4e5f6a</span> mlops-monitoring-framework</div>
+        <div class="t-out"><span class="t-num">c7d8e9b</span> medallion pipeline v2</div>
         <div class="t-blank"></div>
         <div class="t-line"><span class="t-prompt">❯</span><span class="t-cursor"></span></div>
       </div>
@@ -612,20 +614,20 @@ footer span { color: var(--cyan); }
   </div>
   <div class="about-grid reveal">
     <div class="about-body">
-      <p>I'm a <strong>Data Engineer and Generative AI Engineer</strong> with 5+ years of hands-on experience building end-to-end data systems in healthcare and enterprise environments. My core expertise is on <strong>AWS</strong> — orchestrating Glue jobs, EMR clusters, Airflow DAGs on MWAA, and Redshift pipelines that handle millions of records daily.</p>
-      <p>Over the past year I've moved into <strong>GenAI engineering</strong> — designing multi-agent systems with LangGraph, RAG pipelines with Weaviate, and production APIs with FastAPI. I love the intersection of robust data infrastructure and intelligent AI applications.</p>
-      <p>I hold a <strong>Master's in Advanced Data Analytics</strong> from the University of North Texas (2025) and carry AWS, Azure, and Databricks certifications.</p>
+      <p>I'm a <strong>Senior AI Engineer</strong> with 5+ years building production ML systems, agentic AI pipelines, and MLOps infrastructure in regulated healthcare environments. At Capgemini I architected a <strong>LangGraph-based multi-agent system</strong> with supervisor-graph routing, RAG over Weaviate, HITL escalation logic, and a FastAPI/Streamlit production interface.</p>
+      <p>At Optum, I worked directly with clinical ML teams — feature engineering on <strong>10M+ daily records</strong>, A/B experiments tracked by precision/recall/F1, production drift monitoring, and <strong>MLflow-based experiment tracking</strong> with a model registry for versioned deployments.</p>
+      <p>On Azure, I build and deploy ML pipelines using <strong>Azure AI Foundry</strong> for model evaluation and prompt flow orchestration, Azure ML for training and endpoint management, and Microsoft Fabric for unified analytics. I hold a <strong>Master's in Advanced Data Analytics</strong> from UNT (2025) with AWS, Azure DP-203, and Databricks certifications.</p>
       <div class="about-cards">
         <div class="about-card"><div class="about-card-key">Location</div><div class="about-card-val">Denton, TX</div></div>
         <div class="about-card"><div class="about-card-key">Education</div><div class="about-card-val">M.S. Analytics · UNT 2025</div></div>
-        <div class="about-card"><div class="about-card-key">Focus</div><div class="about-card-val">AWS · GenAI · Pipelines</div></div>
+        <div class="about-card"><div class="about-card-key">Focus</div><div class="about-card-val">Agentic AI · MLOps · Azure</div></div>
         <div class="about-card"><div class="about-card-key">Status</div><div class="about-card-val" style="color:var(--green)">● Open to opportunities</div></div>
       </div>
     </div>
     <div class="about-right">
       <div class="metric-card"><div class="metric-num">10M+</div><div class="metric-desc">Daily healthcare records processed on AWS EMR</div></div>
+      <div class="metric-card"><div class="metric-num">100M+</div><div class="metric-desc">Claims & member records migrated to Redshift — zero data loss</div></div>
       <div class="metric-card"><div class="metric-num">50%</div><div class="metric-desc">Query performance improvement via Redshift tuning</div></div>
-      <div class="metric-card"><div class="metric-num">40%</div><div class="metric-desc">Query time reduction with star-schema design</div></div>
       <div class="metric-card"><div class="metric-num">51M+</div><div class="metric-desc">Records processed for American Airlines ML model</div></div>
     </div>
   </div>
@@ -639,28 +641,51 @@ footer span { color: var(--cyan); }
   </div>
   <div class="skills-wrapper reveal">
     <div class="skill-block">
-      <div class="skill-block-header"><span class="skill-icon">🐍</span><span class="skill-name">Languages</span></div>
-      <div class="skill-items"><span class="s-tag">Python</span><span class="s-tag">SQL</span><span class="s-tag">PySpark</span></div>
+      <div class="skill-block-header"><span class="skill-icon">🤖</span><span class="skill-name">Agentic AI & ML</span></div>
+      <div class="skill-items">
+        <span class="s-tag">LangChain</span><span class="s-tag">LangGraph</span><span class="s-tag">RAG</span>
+        <span class="s-tag">HITL Design</span><span class="s-tag">Weaviate</span><span class="s-tag">Hugging Face</span>
+        <span class="s-tag">XGBoost</span><span class="s-tag">Scikit-learn</span>
+      </div>
+    </div>
+    <div class="skill-block">
+      <div class="skill-block-header"><span class="skill-icon">☁️</span><span class="skill-name">Azure Stack</span></div>
+      <div class="skill-items">
+        <span class="s-tag">Azure AI Foundry</span><span class="s-tag">Azure ML</span><span class="s-tag">Prompt Flow</span>
+        <span class="s-tag">Microsoft Fabric</span><span class="s-tag">Synapse Analytics</span>
+        <span class="s-tag">Azure OpenAI</span><span class="s-tag">Azure Data Factory</span>
+      </div>
+    </div>
+    <div class="skill-block">
+      <div class="skill-block-header"><span class="skill-icon">🔁</span><span class="skill-name">MLOps</span></div>
+      <div class="skill-items">
+        <span class="s-tag">MLflow</span><span class="s-tag">Model Registry</span><span class="s-tag">Drift Monitoring</span>
+        <span class="s-tag">GitHub Actions</span><span class="s-tag">Experiment Tracking</span><span class="s-tag">Auto Retraining</span>
+      </div>
     </div>
     <div class="skill-block">
       <div class="skill-block-header"><span class="skill-icon">☁️</span><span class="skill-name">AWS Services</span></div>
-      <div class="skill-items"><span class="s-tag">Glue</span><span class="s-tag">EMR</span><span class="s-tag">Redshift</span><span class="s-tag">S3</span><span class="s-tag">Athena</span><span class="s-tag">DMS</span><span class="s-tag">MWAA</span><span class="s-tag">SNS</span><span class="s-tag">KMS</span><span class="s-tag">IAM</span></div>
+      <div class="skill-items">
+        <span class="s-tag">Glue</span><span class="s-tag">EMR</span><span class="s-tag">Redshift</span>
+        <span class="s-tag">S3</span><span class="s-tag">Athena</span><span class="s-tag">DMS</span>
+        <span class="s-tag">MWAA</span><span class="s-tag">SNS</span><span class="s-tag">KMS</span><span class="s-tag">IAM</span>
+      </div>
     </div>
     <div class="skill-block">
       <div class="skill-block-header"><span class="skill-icon">⚙️</span><span class="skill-name">Data Engineering</span></div>
-      <div class="skill-items"><span class="s-tag">Airflow</span><span class="s-tag">Delta Lake</span><span class="s-tag">Iceberg</span><span class="s-tag">Medallion Arch</span><span class="s-tag">CDC</span><span class="s-tag">ETL/ELT</span></div>
+      <div class="skill-items">
+        <span class="s-tag">Airflow</span><span class="s-tag">Delta Lake</span><span class="s-tag">Iceberg</span>
+        <span class="s-tag">Medallion Arch</span><span class="s-tag">CDC</span><span class="s-tag">ETL/ELT</span>
+        <span class="s-tag">PySpark</span>
+      </div>
     </div>
     <div class="skill-block">
-      <div class="skill-block-header"><span class="skill-icon">🤖</span><span class="skill-name">GenAI & ML</span></div>
-      <div class="skill-items"><span class="s-tag">LangChain</span><span class="s-tag">LangGraph</span><span class="s-tag">RAG</span><span class="s-tag">MCP Schemas</span><span class="s-tag">Weaviate</span><span class="s-tag">FastAPI</span><span class="s-tag">Streamlit</span><span class="s-tag">XGBoost</span></div>
-    </div>
-    <div class="skill-block">
-      <div class="skill-block-header"><span class="skill-icon">🗄️</span><span class="skill-name">Warehouses & DBs</span></div>
-      <div class="skill-items"><span class="s-tag">Snowflake</span><span class="s-tag">Redshift</span><span class="s-tag">SQL Server</span><span class="s-tag">MySQL</span></div>
-    </div>
-    <div class="skill-block">
-      <div class="skill-block-header"><span class="skill-icon">🛠️</span><span class="skill-name">Tools & Libraries</span></div>
-      <div class="skill-items"><span class="s-tag">GitHub Actions</span><span class="s-tag">Pandas</span><span class="s-tag">NumPy</span><span class="s-tag">Scikit-learn</span><span class="s-tag">Tableau</span><span class="s-tag">Jupyter</span></div>
+      <div class="skill-block-header"><span class="skill-icon">🛠️</span><span class="skill-name">Languages & Tools</span></div>
+      <div class="skill-items">
+        <span class="s-tag">Python</span><span class="s-tag">SQL</span><span class="s-tag">PySpark</span>
+        <span class="s-tag">FastAPI</span><span class="s-tag">Streamlit</span><span class="s-tag">Snowflake</span>
+        <span class="s-tag">Tableau</span><span class="s-tag">Jupyter</span>
+      </div>
     </div>
   </div>
 </section>
@@ -672,51 +697,86 @@ footer span { color: var(--cyan); }
     <h2 class="s-title">Work <span>History</span></h2>
   </div>
   <div class="exp-grid">
+
+    <!-- Capgemini -->
     <div class="exp-card reveal">
       <div>
         <div class="exp-role">Generative AI Engineer</div>
-        <div class="exp-company">Volts Consulting, Inc. — Remote, USA</div>
+        <div class="exp-company">Capgemini — Remote, USA</div>
         <div class="exp-project">▸ Life Sciences Multi-Agent AI Chatbot</div>
         <ul class="exp-bullets">
-          <li>Built a multi-agent chatbot using LangGraph routing user questions to specialist sub-agents automatically.</li>
-          <li>Implemented RAG and MCP schemas to ground the chatbot with structured life sciences domain knowledge.</li>
-          <li>Built the backend API using FastAPI and deployed a stakeholder-facing UI demo with Streamlit.</li>
-          <li>Used Weaviate vector database for semantic search across domain documents.</li>
+          <li>Designed the agent graph in LangGraph with a supervisor node that classifies intent and routes to domain-specific sub-agents — each with its own tool set, memory scope, and fallback behavior. Low-confidence responses trigger HITL escalation rather than surfacing a bad answer.</li>
+          <li>Built the RAG layer using Weaviate for semantic vector search, with MCP schemas controlling how domain knowledge gets chunked and injected into each agent's context window — keeping hallucination rates low on domain-specific queries.</li>
+          <li>Served the system through a FastAPI backend with async endpoints and a Streamlit UI clean enough for non-technical stakeholders to run queries independently.</li>
+          <li>Evaluated model outputs using Azure AI Foundry's evaluation tooling — groundedness, relevance, and coherence evals on agent responses before each production release, with content safety filters screening outputs in the life sciences context.</li>
+          <li>Owned the full stack end to end: data ingestion, agent orchestration, API layer, front-end, and cloud deployment — version-controlled with CI checks on every push.</li>
         </ul>
-        <div class="exp-tech"><span class="e-chip">LangGraph</span><span class="e-chip">FastAPI</span><span class="e-chip">Weaviate</span><span class="e-chip">RAG</span><span class="e-chip">Streamlit</span><span class="e-chip">MCP Schemas</span></div>
+        <div class="exp-tech">
+          <span class="e-chip">LangGraph</span><span class="e-chip">FastAPI</span><span class="e-chip">Weaviate</span>
+          <span class="e-chip">RAG</span><span class="e-chip">Streamlit</span><span class="e-chip">Azure AI Foundry</span>
+          <span class="e-chip">Hugging Face</span><span class="e-chip">MCP Schemas</span>
+        </div>
       </div>
       <div class="exp-date">JAN 2026 – Present</div>
     </div>
+
+    <!-- Optum -->
     <div class="exp-card reveal reveal-delay-1">
       <div>
-        <div class="exp-role">Data Engineer</div>
+        <div class="exp-role">AI / ML Engineer</div>
         <div class="exp-company">Optum (UnitedHealth Group) — Hyderabad, India</div>
-        <div class="exp-project">▸ Legacy ETL Modernization & Medallion Architecture Data Lake</div>
+        <div class="exp-project">▸ Project 1: Clinical ML Feature Engineering & Model Experimentation</div>
         <ul class="exp-bullets">
-          <li>Migrated Datastage and SSIS pipelines to AWS Glue, EMR, and Airflow — reducing maintenance effort significantly.</li>
-          <li>Built PySpark pipelines on AWS EMR processing 10M+ daily healthcare records with partitioning, caching, and broadcast joins.</li>
-          <li>Designed Bronze/Silver/Gold Medallion Architecture on S3 with Delta Lake, enforcing data quality rules at each layer.</li>
-          <li>Set up CI/CD using GitHub Actions across Airflow, Glue, and EMR environments.</li>
+          <li>Partnered with data scientists to engineer features from raw clinical claims data — PySpark pipelines covering binning, lag variables, rolling aggregates, and interaction terms processing 10M+ records daily on AWS EMR.</li>
+          <li>Ran controlled experiments comparing feature sets and preprocessing strategies, tracking precision, recall, and F1 across runs. Iterated until input pipelines produced stable, model-ready outputs on held-out clinical data.</li>
+          <li>Built AWS Glue ETL jobs with dynamic frames and schema evolution handling to absorb upstream changes from Snowflake, SQL Server, and flat file sources without breaking feature stability downstream.</li>
         </ul>
-        <div class="exp-tech"><span class="e-chip">AWS Glue</span><span class="e-chip">EMR</span><span class="e-chip">PySpark</span><span class="e-chip">Airflow</span><span class="e-chip">Delta Lake</span><span class="e-chip">Snowflake</span><span class="e-chip">MWAA</span></div>
+        <div class="exp-sub-section">
+          <div class="exp-sub-label">▸ Project 2: Production ML Monitoring & MLOps Infrastructure</div>
+          <ul class="exp-bullets">
+            <li>Owned production model monitoring — tracked prediction drift, feature distribution shift, and input anomalies using custom Python monitoring scripts with SNS alerting, catching data quality regressions before they surfaced as model accuracy drops.</li>
+            <li>Set up MLflow tracking server for experiment logging — every training run recorded hyperparameters, feature set version, evaluation metrics, and artifact paths. Registered production-ready models in the MLflow model registry with staging and production promotion gates.</li>
+            <li>Used Azure ML for model training job scheduling, managed endpoint deployment, and traffic routing between model versions during A/B evaluation periods with automatic rollback on performance degradation.</li>
+            <li>Architected Bronze/Silver/Gold Medallion data lake on S3 with Delta Lake, leveraging time-travel to version training datasets so ML teams could reproduce any historical training run against the exact feature snapshot — non-negotiable in regulated healthcare.</li>
+            <li>Built GitHub Actions CI/CD for ML pipeline releases — automated testing, version-tagged deployments, and rollback triggers on downstream feature drift.</li>
+          </ul>
+        </div>
+        <div class="exp-tech">
+          <span class="e-chip">MLflow</span><span class="e-chip">Azure ML</span><span class="e-chip">AWS EMR</span>
+          <span class="e-chip">PySpark</span><span class="e-chip">Delta Lake</span><span class="e-chip">Airflow</span>
+          <span class="e-chip">AWS Glue</span><span class="e-chip">Snowflake</span><span class="e-chip">GitHub Actions</span>
+        </div>
       </div>
       <div class="exp-date">OCT 2021 – DEC 2023</div>
     </div>
+
+    <!-- HGS -->
     <div class="exp-card reveal reveal-delay-2">
       <div>
-        <div class="exp-role">Data Engineer</div>
-        <div class="exp-company">HGS · Cigna Health · AT&T — Bangalore, India</div>
-        <div class="exp-project">▸ Claims Migration & CDC Data Governance Framework</div>
+        <div class="exp-role">AI / ML Engineer</div>
+        <div class="exp-company">HGS (Hinduja Global Solutions) — Bangalore, India</div>
+        <div class="exp-project">▸ Project 1: Claims Intelligence & Predictive Analytics — Cigna Health</div>
         <ul class="exp-bullets">
-          <li>Migrated claims and member data from SQL Server, MySQL, and flat files into Redshift — zero data loss with checksum validation.</li>
-          <li>Optimized Redshift with dist keys, sort keys, WLM queues, VACUUM/ANALYZE automation — 50% query performance improvement.</li>
-          <li>Implemented CDC with AWS DMS capturing real-time changes into Redshift with minimal latency.</li>
-          <li>Secured pipelines with IAM RBAC, S3 bucket policies, column-level security, and KMS encryption.</li>
+          <li>Built the data foundation for Cigna's claims prediction models — migrated and validated 100M+ claims and member records from SQL Server, MySQL, and flat files into Amazon Redshift with row-count reconciliation and checksum checks at every stage.</li>
+          <li>Engineered features from historical claims data for cost prediction and claims classification models — aggregation windows, member risk variables, and procedure-level interaction features used as primary model inputs by the data science team.</li>
+          <li>Optimized Redshift as the analytical serving layer — distribution key selection, sort key tuning, and WLM configuration brought query execution time down by 50% for teams consuming prediction results.</li>
         </ul>
-        <div class="exp-tech"><span class="e-chip">Redshift</span><span class="e-chip">AWS DMS</span><span class="e-chip">Iceberg</span><span class="e-chip">Athena</span><span class="e-chip">KMS</span><span class="e-chip">SNS</span><span class="e-chip">IAM</span></div>
+        <div class="exp-sub-section">
+          <div class="exp-sub-label">▸ Project 2: Real-Time CDC Ingestion & Data Governance — AT&T</div>
+          <ul class="exp-bullets">
+            <li>Built a real-time ML data pipeline using CDC with AWS DMS — captured row-level source changes and streamed them into Redshift with minimal latency, keeping feature data fresh for models depending on up-to-date customer behavior signals.</li>
+            <li>Ran classification model experiments on telecom customer data — tested feature combinations for churn prediction and anomaly detection, tracking model performance across runs and iterating on feature definitions based on evaluation results.</li>
+            <li>Developed an automated data quality monitoring framework in Python and Glue covering null rate thresholds, row count validation, duplicate detection, and schema drift alerts via SNS.</li>
+          </ul>
+        </div>
+        <div class="exp-tech">
+          <span class="e-chip">Redshift</span><span class="e-chip">AWS DMS</span><span class="e-chip">Iceberg</span>
+          <span class="e-chip">Athena</span><span class="e-chip">KMS</span><span class="e-chip">SNS</span><span class="e-chip">IAM</span>
+        </div>
       </div>
       <div class="exp-date">NOV 2019 – SEP 2021</div>
     </div>
+
   </div>
 </section>
 
@@ -730,23 +790,23 @@ footer span { color: var(--cyan); }
     <div class="proj-card">
       <div class="proj-num">01 ────────</div>
       <div class="proj-title">Life Sciences Multi-Agent Chatbot</div>
-      <p class="proj-desc">LangGraph multi-agent AI chatbot routing life sciences queries to specialist sub-agents with RAG retrieval and MCP schema grounding.</p>
-      <div class="proj-stack"><span class="e-chip">LangGraph</span><span class="e-chip">FastAPI</span><span class="e-chip">Weaviate</span><span class="e-chip">RAG</span></div>
+      <p class="proj-desc">LangGraph multi-agent AI chatbot with supervisor-graph routing, RAG over Weaviate, HITL escalation, and Azure AI Foundry evaluation pipeline.</p>
+      <div class="proj-stack"><span class="e-chip">LangGraph</span><span class="e-chip">FastAPI</span><span class="e-chip">Weaviate</span><span class="e-chip">Azure AI Foundry</span></div>
       <a href="https://github.com/premchand2001/langchain-multiagent-chatbot" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">02 ────────</div>
-      <div class="proj-title">Medallion Architecture on AWS</div>
-      <p class="proj-desc">Production Bronze/Silver/Gold data lake on S3 + Delta Lake with AWS Glue, EMR PySpark processing, and Snowflake gold layer.</p>
-      <div class="proj-stack"><span class="e-chip">PySpark</span><span class="e-chip">Delta Lake</span><span class="e-chip">Glue</span><span class="e-chip">Snowflake</span></div>
+      <div class="proj-title">MLOps Monitoring Framework</div>
+      <p class="proj-desc">Production ML monitoring system tracking prediction drift, feature distribution shift, and input anomalies with MLflow experiment registry and GitHub Actions CI/CD.</p>
+      <div class="proj-stack"><span class="e-chip">MLflow</span><span class="e-chip">Azure ML</span><span class="e-chip">Python</span><span class="e-chip">SNS</span></div>
       <a href="https://github.com/premchand2001/medallion-architecture-aws" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">03 ────────</div>
-      <div class="proj-title">Airflow Pipeline Templates</div>
-      <p class="proj-desc">Production-grade Apache Airflow DAGs for AWS MWAA — Glue, EMR, Redshift, Snowflake with retry logic and SLA monitoring.</p>
-      <div class="proj-stack"><span class="e-chip">Airflow</span><span class="e-chip">MWAA</span><span class="e-chip">AWS Glue</span><span class="e-chip">EMR</span></div>
-      <a href="https://github.com/premchand2001/airflow-pipeline-templates" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
+      <div class="proj-title">Medallion Architecture on AWS</div>
+      <p class="proj-desc">Production Bronze/Silver/Gold data lake on S3 + Delta Lake with time-travel dataset versioning, AWS Glue, EMR PySpark processing, and Snowflake gold layer.</p>
+      <div class="proj-stack"><span class="e-chip">PySpark</span><span class="e-chip">Delta Lake</span><span class="e-chip">Glue</span><span class="e-chip">Snowflake</span></div>
+      <a href="https://github.com/premchand2001/medallion-architecture-aws" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">04 ────────</div>
@@ -757,17 +817,17 @@ footer span { color: var(--cyan); }
     </div>
     <div class="proj-card">
       <div class="proj-num">05 ────────</div>
-      <div class="proj-title">Redshift Migration Framework</div>
-      <p class="proj-desc">End-to-end claims data migration to Amazon Redshift — zero data loss with Iceberg staging, Athena validation, and 50% query improvement.</p>
-      <div class="proj-stack"><span class="e-chip">Redshift</span><span class="e-chip">Iceberg</span><span class="e-chip">Athena</span><span class="e-chip">Airflow</span></div>
-      <a href="https://github.com/premchand2001/redshift-migration-framework" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
+      <div class="proj-title">Baggage Arrival Prediction — AA</div>
+      <p class="proj-desc">ML pipeline predicting baggage arrival curves at DFW Hub — 51M+ records, XGBoost + HistGradientBoosting with time-series lag features and flight-window aggregations.</p>
+      <div class="proj-stack"><span class="e-chip">XGBoost</span><span class="e-chip">Scikit-learn</span><span class="e-chip">PySpark</span><span class="e-chip">HPC</span></div>
+      <a href="https://github.com/premchand2001/baggage-prediction-ml" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">06 ────────</div>
-      <div class="proj-title">Baggage Arrival Prediction — AA</div>
-      <p class="proj-desc">ML pipeline predicting baggage arrival curves at DFW Hub — 51M+ records, XGBoost + HistGradientBoosting multi-output regression.</p>
-      <div class="proj-stack"><span class="e-chip">XGBoost</span><span class="e-chip">Scikit-learn</span><span class="e-chip">PySpark</span><span class="e-chip">HPC</span></div>
-      <a href="https://github.com/premchand2001/baggage-prediction-ml" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
+      <div class="proj-title">Heart Attack Procedure Cost Prediction</div>
+      <p class="proj-desc">Predicted cardiac procedure costs from 4,400+ patient records using Random Forest and Linear Regression — 56% R² after feature engineering across 24 clinical and demographic variables.</p>
+      <div class="proj-stack"><span class="e-chip">Random Forest</span><span class="e-chip">Scikit-learn</span><span class="e-chip">Python</span><span class="e-chip">Feature Eng.</span></div>
+      <a href="https://github.com/premchand2001" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -849,7 +909,7 @@ footer span { color: var(--cyan); }
     <div class="s-label">07 / contact</div>
     <h2 class="s-title">Let's <span>Connect</span></h2>
   </div>
-  <p class="contact-sub reveal">Open to Data Engineering and GenAI Engineering roles. Feel free to reach out anytime.</p>
+  <p class="contact-sub reveal">Open to Senior AI Engineering, MLOps, and Agentic AI roles. Feel free to reach out anytime.</p>
   <div class="contact-grid reveal">
     <a href="mailto:premchandkdata@gmail.com" class="contact-card"><span class="contact-icon">📧</span> premchandkdata@gmail.com</a>
     <a href="https://linkedin.com/in/pc-kothapalli" class="contact-card" target="_blank"><span class="contact-icon">💼</span> linkedin.com/in/pc-kothapalli</a>
@@ -858,7 +918,7 @@ footer span { color: var(--cyan); }
 </section>
 
 <footer>
-  <p>© 2026 <span>Premchand Kothapalli</span> — Data & GenAI Engineer</p>
+  <p>© 2026 <span>Premchand Kothapalli</span> — Senior AI & Data Engineer</p>
   <p>Built with <span>♥</span> · <span>pk.dev</span></p>
 </footer>
 
