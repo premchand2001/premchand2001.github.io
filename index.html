@@ -33,7 +33,6 @@ body {
   cursor: none;
 }
 
-/* ── CUSTOM CURSOR ── */
 .cursor {
   position: fixed; width: 8px; height: 8px;
   background: var(--cyan); border-radius: 50%;
@@ -50,7 +49,6 @@ body {
   transition: all 0.15s ease;
 }
 
-/* ── NOISE OVERLAY ── */
 body::before {
   content: '';
   position: fixed; inset: 0; z-index: 0;
@@ -58,7 +56,6 @@ body::before {
   pointer-events: none; opacity: 0.4;
 }
 
-/* ── NAV ── */
 nav {
   position: fixed; top: 0; width: 100%; z-index: 100;
   padding: 0 6%;
@@ -103,7 +100,6 @@ nav {
 }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
-/* ── HERO ── */
 #hero {
   min-height: 100vh;
   display: grid;
@@ -200,7 +196,6 @@ nav {
 }
 .btn-outline:hover { background: var(--cyan-dim); border-color: var(--cyan); transform: translateY(-2px); }
 
-/* Hero right — terminal card */
 .hero-right { position: relative; z-index: 1; animation: slideIn 0.7s 0.3s ease both; }
 .terminal {
   background: var(--bg2);
@@ -260,7 +255,6 @@ nav {
 }
 .stat-l { font-size: 0.7rem; color: var(--gray); margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
 
-/* ── SECTIONS ── */
 section { padding: 110px 6%; position: relative; }
 .s-label {
   font-family: 'IBM Plex Mono', monospace;
@@ -278,7 +272,6 @@ section { padding: 110px 6%; position: relative; }
 }
 .s-title span { color: var(--cyan); }
 
-/* ── ABOUT ── */
 #about { background: var(--bg2); }
 .about-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; }
 .about-body p {
@@ -306,7 +299,6 @@ section { padding: 110px 6%; position: relative; }
 .metric-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--cyan); line-height: 1; }
 .metric-desc { font-size: 0.82rem; color: var(--gray2); margin-top: 4px; }
 
-/* ── SKILLS ── */
 #skills { background: var(--bg); }
 .skills-wrapper { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
 .skill-block {
@@ -334,7 +326,6 @@ section { padding: 110px 6%; position: relative; }
 }
 .s-tag:hover { color: var(--cyan); border-color: var(--cyan); background: var(--cyan-dim); }
 
-/* ── EXPERIENCE ── */
 #experience { background: var(--bg2); }
 .exp-grid { display: grid; gap: 1.5rem; }
 .exp-card {
@@ -357,7 +348,6 @@ section { padding: 110px 6%; position: relative; }
 .exp-role { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--white); }
 .exp-company { color: var(--cyan); font-size: 0.88rem; margin: 4px 0; font-weight: 500; }
 .exp-project { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--green); margin-bottom: 1rem; letter-spacing: 1px; }
-.exp-project + .exp-project { margin-top: -0.5rem; }
 .exp-date {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
   color: var(--gray); background: var(--bg2);
@@ -380,7 +370,6 @@ section { padding: 110px 6%; position: relative; }
 .exp-sub-section { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--border); }
 .exp-sub-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--green); letter-spacing: 1px; margin-bottom: 0.6rem; }
 
-/* ── PROJECTS ── */
 #projects { background: var(--bg); }
 .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
 .proj-card {
@@ -415,7 +404,6 @@ section { padding: 110px 6%; position: relative; }
 .proj-arrow { transition: transform 0.2s; }
 .proj-link:hover .proj-arrow { transform: translateX(3px); }
 
-/* ── CERTS ── */
 #certifications { background: var(--bg2); }
 .certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .cert-card {
@@ -434,7 +422,6 @@ section { padding: 110px 6%; position: relative; }
 .cert-name { font-weight: 600; font-size: 0.9rem; color: var(--white); margin-bottom: 4px; }
 .cert-issuer { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--cyan); letter-spacing: 1px; }
 
-/* ── EDUCATION ── */
 #education { background: var(--bg); }
 .edu-card {
   background: var(--bg2); border: 1px solid var(--border);
@@ -455,7 +442,6 @@ section { padding: 110px 6%; position: relative; }
 .edu-school { color: var(--cyan); font-size: 0.95rem; margin: 6px 0 4px; }
 .edu-meta { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--gray); letter-spacing: 1px; }
 
-/* ── CONTACT ── */
 #contact { background: var(--bg2); text-align: center; }
 .contact-sub { color: var(--gray2); font-size: 0.97rem; max-width: 480px; margin: 0 auto 3rem; line-height: 1.8; }
 .contact-grid { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
@@ -471,7 +457,6 @@ section { padding: 110px 6%; position: relative; }
 .contact-card:hover { border-color: var(--cyan); background: rgba(0,212,255,0.06); color: var(--cyan); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
 .contact-icon { font-size: 1.1rem; }
 
-/* ── FOOTER ── */
 footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -481,7 +466,6 @@ footer {
 footer p { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--gray); }
 footer span { color: var(--cyan); }
 
-/* ── SCROLL ANIMATIONS ── */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.up { opacity: 1; transform: translateY(0); }
 .reveal-delay-1 { transition-delay: 0.1s; }
@@ -493,7 +477,6 @@ footer span { color: var(--cyan); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── SCANLINE ── */
 .scanline {
   position: fixed; top: 0; left: 0; right: 0;
   height: 2px; background: linear-gradient(90deg, transparent, var(--cyan), transparent);
@@ -524,7 +507,6 @@ footer span { color: var(--cyan); }
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="scanline"></div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">pk<span>.</span>dev</div>
   <ul class="nav-links">
@@ -538,15 +520,13 @@ footer span { color: var(--cyan); }
   <div class="nav-status"><div class="status-dot"></div>open_to_work</div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid-lines"></div>
-
   <div class="hero-left">
     <div class="hero-eyebrow">
       <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">Senior AI Engineer · MLOps · Agentic AI</div>
+      <div class="eyebrow-text">AI Engineer · MLOps · Agentic AI</div>
     </div>
     <h1 class="hero-name">
       Premchand<br>
@@ -572,7 +552,6 @@ footer span { color: var(--cyan); }
       <div class="stat-box"><div class="stat-n">4</div><div class="stat-l">Certs</div></div>
     </div>
   </div>
-
   <div class="hero-right">
     <div class="terminal">
       <div class="terminal-bar">
@@ -583,8 +562,8 @@ footer span { color: var(--cyan); }
         <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">whoami --verbose</span></div>
         <div class="t-blank"></div>
         <div class="t-out"><span class="t-key">name</span>       : <span class="t-str">"Premchand Kothapalli"</span></div>
-        <div class="t-out"><span class="t-key">role</span>       : <span class="t-str">"Senior AI Engineer"</span></div>
-        <div class="t-out"><span class="t-key">location</span>   : <span class="t-str">"Denton, TX"</span></div>
+        <div class="t-out"><span class="t-key">role</span>       : <span class="t-str">"Generative AI Engineer"</span></div>
+        <div class="t-out"><span class="t-key">company</span>    : <span class="t-str">"Capgemini"</span></div>
         <div class="t-out"><span class="t-key">experience</span> : <span class="t-num">5</span> <span class="t-str"># years</span></div>
         <div class="t-blank"></div>
         <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat stack.json</span></div>
@@ -606,7 +585,6 @@ footer span { color: var(--cyan); }
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="reveal">
     <div class="s-label">01 / about</div>
@@ -614,26 +592,25 @@ footer span { color: var(--cyan); }
   </div>
   <div class="about-grid reveal">
     <div class="about-body">
-      <p>I'm a <strong>Senior AI Engineer</strong> with 5+ years building production ML systems, agentic AI pipelines, and MLOps infrastructure in regulated healthcare environments. At Capgemini I architected a <strong>LangGraph-based multi-agent system</strong> with supervisor-graph routing, RAG over Weaviate, HITL escalation logic, and a FastAPI/Streamlit production interface.</p>
-      <p>At Optum, I worked directly with clinical ML teams — feature engineering on <strong>10M+ daily records</strong>, A/B experiments tracked by precision/recall/F1, production drift monitoring, and <strong>MLflow-based experiment tracking</strong> with a model registry for versioned deployments.</p>
-      <p>On Azure, I build and deploy ML pipelines using <strong>Azure AI Foundry</strong> for model evaluation and prompt flow orchestration, Azure ML for training and endpoint management, and Microsoft Fabric for unified analytics. I hold a <strong>Master's in Advanced Data Analytics</strong> from UNT (2025) with AWS, Azure DP-203, and Databricks certifications.</p>
+      <p>I'm an <strong>AI/ML Engineer</strong> with 5+ years building production ML systems, agentic AI pipelines, and MLOps infrastructure in regulated healthcare environments. At Capgemini I built a <strong>LangGraph-based multi-agent system</strong> with supervisor-graph routing, RAG over Weaviate, HITL escalation logic, and a FastAPI/Streamlit production interface.</p>
+      <p>At Optum, I worked directly with clinical ML teams, processing <strong>10M+ daily records</strong> on EMR, running A/B experiments tracked by precision/recall/F1, owning production drift monitoring, and setting up <strong>MLflow experiment tracking</strong> with a model registry for versioned deployments.</p>
+      <p>On Azure, I build and deploy ML pipelines using <strong>Azure AI Foundry</strong> for model evaluation and prompt flow orchestration, Azure ML for training and endpoint management, and Microsoft Fabric for unified analytics. I hold a <strong>Master's in Advanced Data Analytics</strong> from UNT (2025) and certifications in AWS, Azure DP-203, and Databricks.</p>
       <div class="about-cards">
-        <div class="about-card"><div class="about-card-key">Location</div><div class="about-card-val">Denton, TX</div></div>
         <div class="about-card"><div class="about-card-key">Education</div><div class="about-card-val">M.S. Analytics · UNT 2025</div></div>
         <div class="about-card"><div class="about-card-key">Focus</div><div class="about-card-val">Agentic AI · MLOps · Azure</div></div>
+        <div class="about-card"><div class="about-card-key">Domain</div><div class="about-card-val">Healthcare · Life Sciences</div></div>
         <div class="about-card"><div class="about-card-key">Status</div><div class="about-card-val" style="color:var(--green)">● Open to opportunities</div></div>
       </div>
     </div>
     <div class="about-right">
       <div class="metric-card"><div class="metric-num">10M+</div><div class="metric-desc">Daily healthcare records processed on AWS EMR</div></div>
-      <div class="metric-card"><div class="metric-num">100M+</div><div class="metric-desc">Claims & member records migrated to Redshift — zero data loss</div></div>
+      <div class="metric-card"><div class="metric-num">100M+</div><div class="metric-desc">Claims and member records migrated to Redshift with zero data loss</div></div>
       <div class="metric-card"><div class="metric-num">50%</div><div class="metric-desc">Query performance improvement via Redshift tuning</div></div>
       <div class="metric-card"><div class="metric-num">51M+</div><div class="metric-desc">Records processed for American Airlines ML model</div></div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="reveal">
     <div class="s-label">02 / stack</div>
@@ -683,14 +660,13 @@ footer span { color: var(--cyan); }
       <div class="skill-block-header"><span class="skill-icon">🛠️</span><span class="skill-name">Languages & Tools</span></div>
       <div class="skill-items">
         <span class="s-tag">Python</span><span class="s-tag">SQL</span><span class="s-tag">PySpark</span>
-        <span class="s-tag">FastAPI</span><span class="s-tag">Streamlit</span><span class="s-tag">Snowflake</span>
-        <span class="s-tag">Tableau</span><span class="s-tag">Jupyter</span>
+        <span class="s-tag">FastAPI</span><span class="s-tag">Streamlit</span><span class="s-tag">Docker</span>
+        <span class="s-tag">Snowflake</span><span class="s-tag">Jupyter</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="reveal">
     <div class="s-label">03 / experience</div>
@@ -705,40 +681,59 @@ footer span { color: var(--cyan); }
         <div class="exp-company">Capgemini — Remote, USA</div>
         <div class="exp-project">▸ Life Sciences Multi-Agent AI Chatbot</div>
         <ul class="exp-bullets">
-          <li>Designed the agent graph in LangGraph with a supervisor node that classifies intent and routes to domain-specific sub-agents — each with its own tool set, memory scope, and fallback behavior. Low-confidence responses trigger HITL escalation rather than surfacing a bad answer.</li>
-          <li>Built the RAG layer using Weaviate for semantic vector search, with MCP schemas controlling how domain knowledge gets chunked and injected into each agent's context window — keeping hallucination rates low on domain-specific queries.</li>
-          <li>Served the system through a FastAPI backend with async endpoints and a Streamlit UI clean enough for non-technical stakeholders to run queries independently.</li>
-          <li>Evaluated model outputs using Azure AI Foundry's evaluation tooling — groundedness, relevance, and coherence evals on agent responses before each production release, with content safety filters screening outputs in the life sciences context.</li>
-          <li>Owned the full stack end to end: data ingestion, agent orchestration, API layer, front-end, and cloud deployment — version-controlled with CI checks on every push.</li>
+          <li>Designed the agent graph in LangGraph with a supervisor node that classifies intent and routes to domain-specific sub-agents. Each sub-agent has its own tool set, memory scope, and fallback behavior so low-confidence responses escalate rather than reach the end user.</li>
+          <li>Built the RAG layer on Weaviate where domain knowledge gets chunked and injected into each agent's context window based on MCP schemas. This kept hallucination rates low on the specialized life sciences queries the system handles.</li>
+          <li>Served everything through a FastAPI backend with async endpoints and a Streamlit UI clean enough for non-technical stakeholders to run queries without any hand-holding.</li>
+          <li>Before each production release, ran groundedness, relevance, and coherence evals using Azure AI Foundry's evaluation tooling with content safety filters applied throughout.</li>
+          <li>Owned the whole stack end to end: ingestion, orchestration, API, front-end, and cloud deployment. Everything version-controlled through GitHub with CI checks on every push.</li>
         </ul>
         <div class="exp-tech">
           <span class="e-chip">LangGraph</span><span class="e-chip">FastAPI</span><span class="e-chip">Weaviate</span>
           <span class="e-chip">RAG</span><span class="e-chip">Streamlit</span><span class="e-chip">Azure AI Foundry</span>
-          <span class="e-chip">Hugging Face</span><span class="e-chip">MCP Schemas</span>
+          <span class="e-chip">Hugging Face</span><span class="e-chip">Python</span>
         </div>
       </div>
-      <div class="exp-date">JAN 2026 – Present</div>
+      <div class="exp-date">JAN 2026 – PRESENT</div>
+    </div>
+
+    <!-- UNT TA -->
+    <div class="exp-card reveal reveal-delay-1">
+      <div>
+        <div class="exp-role">Teaching Assistant & Graduate Researcher</div>
+        <div class="exp-company">University of North Texas</div>
+        <div class="exp-project">▸ Big Data Course · Applied ML Projects</div>
+        <ul class="exp-bullets">
+          <li>Served as Teaching Assistant for the Big Data course. Helped students work through distributed computing concepts, ran lab sessions, and graded assignments covering Hadoop, Spark, and large-scale data processing.</li>
+          <li>Completed two applied ML projects alongside coursework: baggage arrival curve prediction for American Airlines (51M+ records, XGBoost and HistGradientBoosting at DFW Hub) and cardiac procedure cost prediction (Random Forest, R2 = 0.56, 24 clinical and demographic variables).</li>
+          <li>Both projects were feature-engineering-first. Time-series lags, flight-window aggregations, IQR-based outlier removal, and interaction terms drove the performance gains more than model selection did.</li>
+        </ul>
+        <div class="exp-tech">
+          <span class="e-chip">XGBoost</span><span class="e-chip">Scikit-learn</span><span class="e-chip">PySpark</span>
+          <span class="e-chip">Hadoop</span><span class="e-chip">Spark</span><span class="e-chip">Python</span>
+        </div>
+      </div>
+      <div class="exp-date">JAN 2024 – DEC 2025</div>
     </div>
 
     <!-- Optum -->
-    <div class="exp-card reveal reveal-delay-1">
+    <div class="exp-card reveal reveal-delay-2">
       <div>
         <div class="exp-role">AI / ML Engineer</div>
         <div class="exp-company">Optum (UnitedHealth Group) — Hyderabad, India</div>
         <div class="exp-project">▸ Project 1: Clinical ML Feature Engineering & Model Experimentation</div>
         <ul class="exp-bullets">
-          <li>Partnered with data scientists to engineer features from raw clinical claims data — PySpark pipelines covering binning, lag variables, rolling aggregates, and interaction terms processing 10M+ records daily on AWS EMR.</li>
-          <li>Ran controlled experiments comparing feature sets and preprocessing strategies, tracking precision, recall, and F1 across runs. Iterated until input pipelines produced stable, model-ready outputs on held-out clinical data.</li>
+          <li>Partnered with data scientists to engineer features from raw clinical claims data. Built PySpark pipelines covering binning, lag variables, rolling aggregates, and interaction terms processing 10M+ records daily on AWS EMR.</li>
+          <li>Ran controlled experiments comparing feature sets and preprocessing strategies, tracking precision, recall, and F1 across runs. Kept iterating until the pipelines produced stable outputs on held-out clinical data.</li>
           <li>Built AWS Glue ETL jobs with dynamic frames and schema evolution handling to absorb upstream changes from Snowflake, SQL Server, and flat file sources without breaking feature stability downstream.</li>
         </ul>
         <div class="exp-sub-section">
           <div class="exp-sub-label">▸ Project 2: Production ML Monitoring & MLOps Infrastructure</div>
           <ul class="exp-bullets">
-            <li>Owned production model monitoring — tracked prediction drift, feature distribution shift, and input anomalies using custom Python monitoring scripts with SNS alerting, catching data quality regressions before they surfaced as model accuracy drops.</li>
-            <li>Set up MLflow tracking server for experiment logging — every training run recorded hyperparameters, feature set version, evaluation metrics, and artifact paths. Registered production-ready models in the MLflow model registry with staging and production promotion gates.</li>
-            <li>Used Azure ML for model training job scheduling, managed endpoint deployment, and traffic routing between model versions during A/B evaluation periods with automatic rollback on performance degradation.</li>
-            <li>Architected Bronze/Silver/Gold Medallion data lake on S3 with Delta Lake, leveraging time-travel to version training datasets so ML teams could reproduce any historical training run against the exact feature snapshot — non-negotiable in regulated healthcare.</li>
-            <li>Built GitHub Actions CI/CD for ML pipeline releases — automated testing, version-tagged deployments, and rollback triggers on downstream feature drift.</li>
+            <li>Owned production model monitoring tracking prediction drift, feature distribution shift, and input anomalies using custom Python scripts with SNS alerting. Caught data quality regressions before they showed up as accuracy drops in clinical reporting.</li>
+            <li>Set up MLflow tracking server so every training run recorded hyperparameters, feature set version, evaluation metrics, and artifact paths. Models went through staging and production gates in the registry before deployment.</li>
+            <li>Used Azure ML for training job scheduling and managed endpoint deployment with traffic routing between model versions during A/B evaluation and automatic rollback on metric degradation.</li>
+            <li>Architected Bronze/Silver/Gold Medallion data lake on S3 with Delta Lake, using time-travel to version training datasets so ML teams could reproduce any historical run against the exact feature snapshot used.</li>
+            <li>Built GitHub Actions CI/CD for ML pipeline releases with automated testing, version-tagged deployments, and rollback triggers on downstream feature drift.</li>
           </ul>
         </div>
         <div class="exp-tech">
@@ -751,22 +746,22 @@ footer span { color: var(--cyan); }
     </div>
 
     <!-- HGS -->
-    <div class="exp-card reveal reveal-delay-2">
+    <div class="exp-card reveal reveal-delay-3">
       <div>
-        <div class="exp-role">AI / ML Engineer</div>
+        <div class="exp-role">Data Engineer</div>
         <div class="exp-company">HGS (Hinduja Global Solutions) — Bangalore, India</div>
         <div class="exp-project">▸ Project 1: Claims Intelligence & Predictive Analytics — Cigna Health</div>
         <ul class="exp-bullets">
-          <li>Built the data foundation for Cigna's claims prediction models — migrated and validated 100M+ claims and member records from SQL Server, MySQL, and flat files into Amazon Redshift with row-count reconciliation and checksum checks at every stage.</li>
-          <li>Engineered features from historical claims data for cost prediction and claims classification models — aggregation windows, member risk variables, and procedure-level interaction features used as primary model inputs by the data science team.</li>
-          <li>Optimized Redshift as the analytical serving layer — distribution key selection, sort key tuning, and WLM configuration brought query execution time down by 50% for teams consuming prediction results.</li>
+          <li>Built the data foundation for Cigna's claims prediction models by migrating and validating 100M+ claims and member records from SQL Server, MySQL, and flat files into Amazon Redshift. Ran row-count reconciliation and checksum checks at every stage.</li>
+          <li>Engineered features from historical claims data for cost prediction and claims classification models including aggregation windows, member risk variables, and procedure-level interaction features used as primary model inputs.</li>
+          <li>Optimized Redshift as the analytical serving layer. Distribution key selection, sort key tuning, and WLM configuration cut query execution time by 50% for teams consuming prediction results.</li>
         </ul>
         <div class="exp-sub-section">
           <div class="exp-sub-label">▸ Project 2: Real-Time CDC Ingestion & Data Governance — AT&T</div>
           <ul class="exp-bullets">
-            <li>Built a real-time ML data pipeline using CDC with AWS DMS — captured row-level source changes and streamed them into Redshift with minimal latency, keeping feature data fresh for models depending on up-to-date customer behavior signals.</li>
-            <li>Ran classification model experiments on telecom customer data — tested feature combinations for churn prediction and anomaly detection, tracking model performance across runs and iterating on feature definitions based on evaluation results.</li>
-            <li>Developed an automated data quality monitoring framework in Python and Glue covering null rate thresholds, row count validation, duplicate detection, and schema drift alerts via SNS.</li>
+            <li>Built a real-time ML data pipeline using CDC with AWS DMS, capturing row-level source changes and streaming them into Redshift with minimal latency to keep feature data fresh for models that depended on up-to-date customer behavior signals.</li>
+            <li>Developed an automated data quality monitoring framework in Python and Glue covering null rate thresholds, row count validation, duplicate detection, and schema drift alerts via SNS. Nothing ran until the quality checks passed.</li>
+            <li>Ran classification experiments on telecom customer data for churn prediction and anomaly detection, tracked performance across runs, and iterated on feature definitions based on evaluation results.</li>
           </ul>
         </div>
         <div class="exp-tech">
@@ -780,7 +775,6 @@ footer span { color: var(--cyan); }
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="reveal">
     <div class="s-label">04 / work</div>
@@ -804,35 +798,34 @@ footer span { color: var(--cyan); }
     <div class="proj-card">
       <div class="proj-num">03 ────────</div>
       <div class="proj-title">Medallion Architecture on AWS</div>
-      <p class="proj-desc">Production Bronze/Silver/Gold data lake on S3 + Delta Lake with time-travel dataset versioning, AWS Glue, EMR PySpark processing, and Snowflake gold layer.</p>
+      <p class="proj-desc">Production Bronze/Silver/Gold data lake on S3 and Delta Lake with time-travel dataset versioning, AWS Glue, EMR PySpark processing, and Snowflake gold layer.</p>
       <div class="proj-stack"><span class="e-chip">PySpark</span><span class="e-chip">Delta Lake</span><span class="e-chip">Glue</span><span class="e-chip">Snowflake</span></div>
       <a href="https://github.com/premchand2001/medallion-architecture-aws" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">04 ────────</div>
       <div class="proj-title">CDC Data Governance Framework</div>
-      <p class="proj-desc">CDC-based incremental ingestion with AWS DMS, automated DQ monitoring, Glue Data Catalog lineage, KMS encryption, IAM access control.</p>
+      <p class="proj-desc">CDC-based incremental ingestion with AWS DMS, automated data quality monitoring, Glue Data Catalog lineage, KMS encryption, and IAM access control.</p>
       <div class="proj-stack"><span class="e-chip">AWS DMS</span><span class="e-chip">Glue Catalog</span><span class="e-chip">KMS</span><span class="e-chip">SNS</span></div>
       <a href="https://github.com/premchand2001/cdc-data-governance-aws" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">05 ────────</div>
       <div class="proj-title">Baggage Arrival Prediction — AA</div>
-      <p class="proj-desc">ML pipeline predicting baggage arrival curves at DFW Hub — 51M+ records, XGBoost + HistGradientBoosting with time-series lag features and flight-window aggregations.</p>
+      <p class="proj-desc">ML pipeline predicting baggage arrival curves at DFW Hub. 51M+ records, XGBoost and HistGradientBoosting with time-series lag features and flight-window aggregations.</p>
       <div class="proj-stack"><span class="e-chip">XGBoost</span><span class="e-chip">Scikit-learn</span><span class="e-chip">PySpark</span><span class="e-chip">HPC</span></div>
       <a href="https://github.com/premchand2001/baggage-prediction-ml" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
     <div class="proj-card">
       <div class="proj-num">06 ────────</div>
       <div class="proj-title">Heart Attack Procedure Cost Prediction</div>
-      <p class="proj-desc">Predicted cardiac procedure costs from 4,400+ patient records using Random Forest and Linear Regression — 56% R² after feature engineering across 24 clinical and demographic variables.</p>
+      <p class="proj-desc">Predicted cardiac procedure costs from 4,400+ patient records using Random Forest and Linear Regression. 56% R2 after feature engineering across 24 clinical and demographic variables.</p>
       <div class="proj-stack"><span class="e-chip">Random Forest</span><span class="e-chip">Scikit-learn</span><span class="e-chip">Python</span><span class="e-chip">Feature Eng.</span></div>
       <a href="https://github.com/premchand2001" class="proj-link" target="_blank">View on GitHub <span class="proj-arrow">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="reveal">
     <div class="s-label">05 / certifications</div>
@@ -887,7 +880,6 @@ footer span { color: var(--cyan); }
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
   <div class="reveal">
     <div class="s-label">06 / education</div>
@@ -896,20 +888,19 @@ footer span { color: var(--cyan); }
   <div class="edu-card reveal">
     <div class="edu-glyph">🎓</div>
     <div>
-      <div class="edu-degree">Master of Science — Advanced Data Analytics</div>
+      <div class="edu-degree">Master of Science, Advanced Data Analytics</div>
       <div class="edu-school">University of North Texas</div>
       <div class="edu-meta">DENTON, TX · GRADUATED MAY 2025</div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="reveal">
     <div class="s-label">07 / contact</div>
     <h2 class="s-title">Let's <span>Connect</span></h2>
   </div>
-  <p class="contact-sub reveal">Open to Senior AI Engineering, MLOps, and Agentic AI roles. Feel free to reach out anytime.</p>
+  <p class="contact-sub reveal">Open to AI Engineering, MLOps, and Agentic AI roles. Feel free to reach out anytime.</p>
   <div class="contact-grid reveal">
     <a href="mailto:premchandkdata@gmail.com" class="contact-card"><span class="contact-icon">📧</span> premchandkdata@gmail.com</a>
     <a href="https://linkedin.com/in/pc-kothapalli" class="contact-card" target="_blank"><span class="contact-icon">💼</span> linkedin.com/in/pc-kothapalli</a>
@@ -918,18 +909,17 @@ footer span { color: var(--cyan); }
 </section>
 
 <footer>
-  <p>© 2026 <span>Premchand Kothapalli</span> — Senior AI & Data Engineer</p>
+  <p>© 2026 <span>Premchand Kothapalli</span> — AI & Data Engineer</p>
   <p>Built with <span>♥</span> · <span>pk.dev</span></p>
 </footer>
 
 <script>
-  // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
   document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
   function animRing() {
-    rx += (mx - rx) * 0.12; ry += (my - ry) *.12;
+    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
     ring.style.left = rx+'px'; ring.style.top = ry+'px';
     requestAnimationFrame(animRing);
   }
@@ -939,19 +929,17 @@ footer span { color: var(--cyan); }
     el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,212,255,0.4)'; });
   });
 
-  // Scroll reveal
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('up'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Active nav
   const sections = document.querySelectorAll('section[id]');
   const links = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
     let cur = '';
     sections.forEach(s => { if(window.scrollY >= s.offsetTop - 80) cur = s.id; });
-    links.forEach(a => { a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--cyan)' : ''; });
+    links.forEach(a => { a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--cyan)' : ''; });
   });
 </script>
 </body>
